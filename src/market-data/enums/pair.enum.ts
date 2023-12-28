@@ -1,4 +1,4 @@
-export enum Pair {
-  BTCUSD = 'BTCUSD',
-  ETHUSD = 'ETHUSD',
+export enum PairEnum {
+  BTCUSD = 'tBTCUSD',
+  ETHUSD = 'tETHUSD',
 }

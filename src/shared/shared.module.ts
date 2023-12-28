@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
-import { HttpAdapterService } from './external/bitfinex.service';
+import { BitfinexService } from './external/bitfinex.service';
+import { HttpAdapterService } from './http-adapter/http-adapter.service';
 
 @Module({
   imports: [],
-  providers: [HttpAdapterService],
-  exports: [HttpAdapterService],
+  providers: [BitfinexService, HttpAdapterService],
+  exports: [BitfinexService, HttpAdapterService],
 })
 export class SharedModule {}
