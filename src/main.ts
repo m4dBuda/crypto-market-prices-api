@@ -1,6 +1,8 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { config } from 'dotenv';
 
+config();
 // TODO: Implement helmet to secure the app
 // TODO: Implement swagger to document the API
 // TODO: Implement rate limiting to protect the API
