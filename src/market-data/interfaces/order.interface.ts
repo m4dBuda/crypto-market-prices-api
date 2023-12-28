@@ -1,6 +1,4 @@
-import { Pair } from '../enums/pair.enum';
-
-export interface Order {
+export interface OrderInterface {
   price: number;
   count: number;
   amount: number;
